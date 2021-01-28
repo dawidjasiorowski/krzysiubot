@@ -12,6 +12,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('#krzysiu'):
+    if message.content.startswith("#krzysiu"):
         await message.author.edit(nick=krzysiu.getName())
+    if message.content.startswith("#powiedzenie"):
+        await message.channel.send(krzysiu.getPhrase())
 client.run(os.getenv("TOKEN"))

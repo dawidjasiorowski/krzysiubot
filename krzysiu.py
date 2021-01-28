@@ -11,7 +11,7 @@ with open("./names.txt", "r") as f:
 
 
 def getName():
-    a = random.randrange(0, len(adjectives))
+    a = random.randrange(0, len(adj))
     b = random.randrange(0, len(names))
     return adj[a] + " " + names[b]
 
